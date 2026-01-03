@@ -31,7 +31,7 @@ export default function HomeIntro({
     endAt="60%"    // ✅ ends when heading top hits 10%
     className="text-3xl font-light leading-snug tracking-wide sm:text-4xl md:text-5xl"
     lines={[
-      "I'm Aziz – a Full Stack Developer crafting fast,",
+      "I'm Abdul – a Full Stack Developer crafting fast,",
       "scalable, and immersive digital experiences that",
       "merge creativity with engineering precision.",
     ]}
