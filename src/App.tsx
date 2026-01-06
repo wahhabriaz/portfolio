@@ -1,6 +1,7 @@
-import MainSection from "./components/ExpImage";
+import FirstStorySection from "./components/FirstStorySection";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import HomeAboutSection from "./components/HomeAbout";
+// import HomeAboutSection from "./components/HomeAbout";
 import HomeIntro from "./components/HomeIntro";
 
 export default function App() {
@@ -10,7 +11,8 @@ export default function App() {
     <HomeIntro/>
     <section className="w-full h-screen"></section>
     {/* <HomeAboutSection/> */}
-    <MainSection/>
+    <FirstStorySection/>
+    <Footer/>
     
     </>
 
