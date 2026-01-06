@@ -101,9 +101,9 @@ export default function ServicesSection() {
         x: -totalScroll,
         ease: "none",
         scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: () => `+=${totalScroll + 500}`, // ✅ extra space like reference
+          trigger: track,
+          start: "top 10%",
+          end: () => `+=${totalScroll + 0}`, // ✅ extra space like reference
           scrub: 1,
           pin: pin,
           anticipatePin: 1,
@@ -168,19 +168,17 @@ function ServiceCard({
   return (
     <div className="group relative">
       <div
-        className={[
-          "relative text-[#1c1c1c]",
-          "w-full sm:w-[350px] md:w-[450px] lg:w-[480px]",
-          "h-auto sm:h-[350px] md:h-[450px] lg:h-[480px]",
-          "border border-gray-400",
-          // ✅ desktop: remove right border except last (like reference)
-          "lg:border-r-0",
-          isLast ? "lg:border-r" : "",
-          // ✅ mobile spacing
-          "p-6 sm:p-8 md:p-10",
-          "transition-all duration-500 cursor-pointer overflow-hidden",
-          "mb-4 lg:mb-0",
-        ].join(" ")}
+         className={[
+    "relative text-[#1c1c1c]",
+    "w-full sm:w-[350px] md:w-[450px] lg:w-[480px]",
+    "h-auto sm:h-[350px] md:h-[450px] lg:h-[480px]",
+    "border border-gray-400",
+    // ✅ Only remove right border on desktop if NOT last
+    !isLast ? "lg:border-r-0" : "lg:border-r",
+    "p-6 sm:p-8 md:p-10",
+    "transition-all duration-500 cursor-pointer overflow-hidden",
+    "mb-4 lg:mb-0",
+  ].join(" ")}
       >
         <div className="relative flex flex-col justify-between z-10 h-full">
           {/* top */}
