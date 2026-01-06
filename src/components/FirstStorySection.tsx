@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { TitleMarquee } from "./TitleMarquee";
 import ScrollDirectionMarquee from "./ScrollMarquee";
 import ServicesSection from "./ServicesSection";
 
@@ -176,7 +175,7 @@ const svgPathRef = useRef<SVGPathElement | null>(null);
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
           {/* Left big statement */}
           <div className="max-w-xl">
-            <h3 className="text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl">
+            <h3 className="text-3xl font-medium leading-tight text-black/80 tracking-tight sm:text-4xl md:text-5xl">
               Driving measurable growth and engagement through thoughtful design
               and engineering.
             </h3>
@@ -202,7 +201,7 @@ const svgPathRef = useRef<SVGPathElement | null>(null);
         </div>
       </div>
       <ServicesSection/>
-      <section className="w-full h-screen"></section>
+    
     </section>
   );
 }
