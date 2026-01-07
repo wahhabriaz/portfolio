@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 type NavItem = {
   label: string;
@@ -7,10 +8,10 @@ type NavItem = {
 };
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Works", href: "#works" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Works", href: "/works" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -28,6 +29,7 @@ export default function Navbar() {
 
   return (
     <>
+    
       <header className="fixed left-0 top-0 z-[100] w-full bg-[#e8e8e7]/90 backdrop-blur">
         <div className="mx-auto flex w-full max-w-8xl items-center justify-between px-4 py-4 sm:px-8">
           {/* Logo */}
@@ -41,13 +43,13 @@ export default function Navbar() {
           {/* Desktop nav */}
           <nav className="hidden items-center gap-10 text-sm text-black/70 md:flex">
             {NAV_ITEMS.slice(0, 3).map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="transition-colors hover:text-black"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
 
             {/* Contact Pill + Arrow Circle */}
