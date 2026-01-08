@@ -172,7 +172,7 @@ const svgPathRef = useRef<SVGPathElement | null>(null);
         {/* =========================
             TEXT TWO-COLUMN
         ========================== */}
-        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
+        <div className="mt-[5%] w-[97%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
           {/* Left big statement */}
           <div className="max-w-xl">
             <h3 className="text-3xl font-medium leading-tight text-black/80 tracking-tight sm:text-4xl md:text-5xl">
