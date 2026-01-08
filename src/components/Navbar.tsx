@@ -6,7 +6,7 @@ import {
   useScroll,
 } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-
+import { FaBars } from "react-icons/fa";
 type NavItem = {
   label: string;
   href: string;
@@ -160,7 +160,7 @@ export default function Navbar() {
             {/* ✅ Contact button (parent group + each span reacts independently) */}
             <Link
               to="/contact"
-              className="group/contact flex items-center gap-2"
+              className="group/contact flex items-center"
             >
               {/* Pill */}
               <HoverFill className="rounded-full">
@@ -182,11 +182,11 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="md:hidden"
+            className="md:hidden h-12 w-12 rounded-[1.5rem]"
             aria-label="Open menu"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white">
-              ☰
+            <div className="flex w-full h-full items-center justify-center  rounded-[1.2rem] bg-black text-white">
+             <FaBars className="w-full h-[50%]"/>
             </div>
           </button>
         </div>
@@ -199,13 +199,13 @@ export default function Navbar() {
             type="button"
             onClick={() => setOpen(true)}
             aria-label="Open menu"
-            className="fixed right-6 top-6 z-[120] flex h-14 w-14 items-center justify-center rounded-full bg-black text-white shadow-[0_20px_60px_rgba(0,0,0,0.3)]"
+            className="fixed right-6 top-6 z-[120] flex h-14 w-14 items-center justify-center rounded-[1.5rem] bg-black text-white shadow-[0_20px_60px_rgba(0,0,0,0.3)]"
             initial={{ y: 18, opacity: 0, scale: 0.95 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             exit={{ y: 18, opacity: 0, scale: 0.95 }}
             transition={{ type: "spring", stiffness: 260, damping: 22 }}
           >
-            ☰
+            <FaBars className="w-full h-[50%]"/>
           </motion.button>
         )}
       </AnimatePresence>
