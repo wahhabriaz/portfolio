@@ -45,7 +45,7 @@ export default function Hero(): JSX.Element {
 
   return (
     <section
-      className="relative h-screen w-full overflow-hidden bg-[#e7e7e7]"
+      className="relative h-[calc(100vh-96px)] md:h-[calc(100vh-88px)] w-full overflow-hidden bg-[#e7e7e7]"
       itemScope
       itemType="http://schema.org/Person"
     >
