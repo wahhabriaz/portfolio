@@ -25,7 +25,7 @@ export default function HomeIntro({
 
       <div className="relative mx-auto flex min-h-screen max-w-6xl z-[41] flex-col items-center px-4 pt-28">
         {/* headline */}
-   <div className="w-full max-w-4xl px-6 py-8 text-center sm:px-10">
+   <div className="w-full max-w-6xl px-6 py-8 text-center sm:px-10">
   <ScrubRevealLines
     startAt="70%"  // ✅ starts when heading top hits 40% of viewport
     endAt="60%"    // ✅ ends when heading top hits 10%
@@ -44,7 +44,7 @@ export default function HomeIntro({
         <div className="h-16 sm:h-20" />
 
         {/* paragraph */}
-    <div className="w-full max-w-3xl  px-6 py-6 text-center sm:px-10">
+    <div className="w-full max-w-6xl  px-6 py-6 text-center sm:px-10">
   <ScrubRevealLines
     startAt="80%" // ✅ starts later
     endAt="75%"
