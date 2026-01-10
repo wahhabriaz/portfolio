@@ -5,7 +5,7 @@ type AboutIntroProps = {
 };
 
 export default function AboutIntro({
-  imageSrc = "/images/about-portrait.jpg",
+  imageSrc = "/myimage2.jpg",
 }: AboutIntroProps) {
   return (
     <section className="w-full bg-[#e8e8e7] text-black">
@@ -44,11 +44,11 @@ export default function AboutIntro({
 
           {/* RIGHT: image */}
           <div className="flex items-start justify-center lg:justify-end">
-            <div className="w-full max-w-full overflow-hidden border border-black/20 bg-black/5 shadow-[0_30px_70px_rgba(0,0,0,0.12)]">
+            <div className="w-full max-w-full overflow-hidden md:h-full border border-black/20 bg-black/5 shadow-[0_30px_70px_rgba(0,0,0,0.12)]">
               <img
                 src={imageSrc}
                 alt="Portrait"
-                className="h-[420px] w-full object-cover sm:h-[520px] md:h-[620px] lg:h-[720px]"
+                className="h-[420px] w-full object-cover sm:h-[520px] md:h-[620px] lg:h-full"
                 draggable={false}
               />
             </div>
