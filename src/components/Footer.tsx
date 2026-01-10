@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import FooterRobot from "./3d-Component/FooterRobot";
 
 type LinkItem = { label: string; href: string };
 
@@ -168,7 +169,8 @@ export default function Footer() {
         <div className="relative mt-16 flex items-center justify-center">
           {/* you can add a subtle shadow/spotlight */}
           <div className="pointer-events-none absolute inset-0 mx-auto h-[240px] w-[240px] rounded-full bg-white/5 blur-3xl" />
-          <RobotFollow src="/images/robot.webp" />
+          {/* <RobotFollow src="/images/robot.webp" />
+           <FooterRobot height={240} /> */}
         </div>
 
         {/* big name text */}
