@@ -19,7 +19,7 @@ export default function AboutCTA({
               {title}
             </h2>
 
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-[1.9] text-white/60 sm:text-base md:text-[17px]">
+            <p className="mx-auto mt-6 max-w-3xl text-sm leading-[1.9] text-white/60 sm:text-base md:text-[17px]">
               {text}
             </p>
           </div>
