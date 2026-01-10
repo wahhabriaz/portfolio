@@ -12,25 +12,25 @@ const WORKS: WorkItem[] = [
   {
     category: "AI Assistant",
     title: "VexLogic",
-    image: "/images/work-1.jpg",
+    image: "https://azizkhaldi.com/_next/static/media/p-vexlogic-ai-assistant.1a9ca26b.jpg",
     theme: "dark",
   },
   {
     category: "Business",
     title: "VexLogic business",
-    image: "/images/work-2.jpg",
+    image: "https://azizkhaldi.com/_next/static/media/p-vexlogic-business-expander.84d3869a.jpg",
     theme: "dark",
   },
   {
     category: "3D Visualisation",
     title: "Comra",
-    image: "/images/work-3.jpg",
+    image: "https://azizkhaldi.com/_next/static/media/p-comra.66d67f23.jpg",
     theme: "dark",
   },
   {
     category: "Property Booking",
     title: "SuperHost",
-    image: "/images/work-4.jpg",
+    image: "https://azizkhaldi.com/_next/static/media/super-host-phone.6e0451d2.jpg",
     theme: "light",
   },
 ];
