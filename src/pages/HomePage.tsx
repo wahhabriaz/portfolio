@@ -6,6 +6,7 @@ import WorkSection from "../components/WorkSection";
 import Hero from "../components/Hero";
 import FirstStorySection from "../components/FirstStorySection";
 import HomeIntro from "../components/HomeIntro";
+import LetsConnectSection from "../components/LetsConnect";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
  <HomeIntro/>
     <FirstStorySection/>
       <WorkSection />
+      <LetsConnectSection/>
     </>
   );
 }
