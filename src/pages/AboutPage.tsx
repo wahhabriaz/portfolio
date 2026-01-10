@@ -11,7 +11,10 @@ export default function AboutPage() {
   return (
     <>
       <AboutSection />
-      <ScrollDirectionMarquee/>
+      <div className="bg-[#e7e7e7]">
+ <ScrollDirectionMarquee/>
+      </div>
+     
       <AboutIntro/>
       <AboutServices/>
    <ProvenImpact/>
