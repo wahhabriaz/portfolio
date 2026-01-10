@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { BrowserRouter } from "react-router-dom";
+import SmoothScrollProvider from './providers/SmoothScrollProvider';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-     <App />
+  <SmoothScrollProvider>
+ <App />
+  </SmoothScrollProvider>
+    
     </BrowserRouter>
    
   </React.StrictMode>
