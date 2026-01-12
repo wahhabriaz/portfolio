@@ -4,17 +4,17 @@ import FooterRobot from "./3d-Component/FooterRobot";
 type LinkItem = { label: string; href: string };
 
 const LINKS: LinkItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/home" },
+  { label: "Work", href: "/work" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const SOCIALS: LinkItem[] = [
-  { label: "Email", href: "mailto:contact@yourdomain.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "Whatsapp", href: "https://wa.me/0000000000" },
-  { label: "Github", href: "https://github.com" },
+  { label: "Email", href: "mailto:wahhabriaz95@gmail.com" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/abdulwahaab4/" },
+  { label: "Whatsapp", href: "https://wa.me/923124593613" },
+  { label: "Github", href: "https://github.com/wahhabriaz" },
 ];
 
 function FooterColumn({ title, items }: { title: string; items: LinkItem[] }) {
@@ -161,7 +161,7 @@ export default function Footer() {
           {/* right pills */}
           <div className="flex flex-wrap items-center justify-start gap-4 lg:justify-end">
             <Pill>+923124593613</Pill>
-            <Pill>contact@abdulwahhab4.com</Pill>
+            <Pill>wahhabriaz95@gmail.com</Pill>
           </div>
         </div>
 
@@ -175,7 +175,7 @@ export default function Footer() {
 
         {/* big name text */}
         <div className="mt-6 flex items-end justify-center">
-          <h2 className="select-none text-[22vw] font-semibold leading-none tracking-tight text-white sm:text-[18vw] md:text-[15vw]">
+          <h2 className="select-none text-[15vw] font-semibold leading-none tracking-tight text-white">
             AB. WAHAAB
           </h2>
         </div>
