@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import WorksPage from "./pages/WorksPage";
 import ScrollToTop from "./components/ScrollToTop";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/works" element={<WorksPage />} />
+         <Route path="/contact" element={<ContactPage />} />
       </Routes>
   
    
