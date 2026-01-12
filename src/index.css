@@ -10,3 +10,38 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
 }
+
+/* Infinite marquee */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marqueeMove 18s linear infinite;
+}
+
+.marquee__run {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Smooth infinite loop */
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}
