@@ -25,7 +25,7 @@ export default function Contact() {
           {/* RIGHT: Content */}
           <div className="relative flex flex-col bg-[#0b0b0b] px-6 pb-7 pt-28 sm:px-10 sm:pb-10 sm:pt-32 lg:px-16">
             {/* MAIN INFO GRID */}
-            <div className="grid flex-1 grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+            <div className="grid flex-1 grid-cols-1 gap-12 md:grid-cols-2 lg:gap-16">
               {/* LEFT COLUMN */}
               <div className="pt-6 lg:pt-[8rem]">
                 <div className="space-y-10">
@@ -114,7 +114,7 @@ export default function Contact() {
               {/* show image on mobile */}
               <div className="relative overflow-hidden rounded-2xl bg-black">
                 <img
-                  src="/images/contact-left.jpg"
+                  src="/myimage.png"
                   alt="Contact media"
                   className="h-[220px] w-full object-cover"
                   draggable={false}
