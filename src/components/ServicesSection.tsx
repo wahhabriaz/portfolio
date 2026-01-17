@@ -159,7 +159,7 @@ export default function ServicesSection() {
 function ServiceCard({
   service,
   isLast,
-  isFirst,
+  
 }: {
   service: Service;
   isLast: boolean;
