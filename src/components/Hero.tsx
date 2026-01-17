@@ -107,7 +107,7 @@ export default function Hero(): JSX.Element {
         <div className="absolute right-0 top-1/2 z-50 hidden -translate-y-1/2 lg:block">
           <div className="flex h-32 w-16 items-center justify-center bg-white shadow-md">
             <span className="-rotate-90 text-sm font-semibold tracking-wider text-black ">
-              Honors
+              Abdul
             </span>
           </div>
         </div>
