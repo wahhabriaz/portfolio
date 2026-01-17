@@ -32,12 +32,12 @@ export default function Hero(): JSX.Element {
       icon: <LinkedInIcon className="h-6 w-6" />,
     },
     {
-      href: "https://wa.me/",
+      href: "https://wa.me/923124593613s",
       label: "WhatsApp",
       icon: <WhatsAppIcon className="h-6 w-6" />,
     },
     {
-      href: "https://github.com",
+      href: "https://github.com/wahhabriaz",
       label: "GitHub",
       icon: <GitHubIcon className="h-6 w-6" />,
     },
@@ -98,7 +98,7 @@ export default function Hero(): JSX.Element {
             </h1>
 
             <h1 className="font-cabinetGrotesk text-[2.5rem] leading-[2.7rem] sm:text-[3.2rem] sm:leading-[3.4rem] md:text-[4.2rem] md:leading-[4.5rem] lg:text-[5.2rem] lg:leading-[5.2rem]">
-              UI &amp; UX Designer.
+              Data Scientist.
             </h1>
           </div>
         </div>
