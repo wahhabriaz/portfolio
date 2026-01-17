@@ -53,8 +53,6 @@ export default function Contact() {
               <div className="pt-6 lg:pt-[8rem]">
                 <BlockLabel label="FIND US">
                   <div className="text-xl font-extrabold uppercase leading-tight tracking-tight text-white sm:text-2xl">
-                    MINI MARKET
-                    <br />
                     GULBERG
                     <br />
                     LAHORE
