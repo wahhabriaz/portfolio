@@ -16,5 +16,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["portfolio/src"]
+  "include": ["src/**/*"]  // Corrected path to match your project structure
 }
