@@ -37,10 +37,6 @@ export default function HomeIntro({
     ]}
   />
 </div>
-
-
-        
-
         <div className="h-16 sm:h-20" />
 
         {/* paragraph */}

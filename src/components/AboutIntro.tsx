@@ -1,4 +1,4 @@
-import React from "react";
+
 
 type AboutIntroProps = {
   imageSrc?: string;

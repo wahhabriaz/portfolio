@@ -1,5 +1,4 @@
-import React from "react";
-import WorkSection from "../components/WorkSection";
+
 
 export default function WorksPage() {
   return (

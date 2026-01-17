@@ -1,4 +1,4 @@
-import React from "react";
+
 import AboutSection from "../components/AboutSection";
 import ScrollDirectionMarquee from "../components/ScrollMarquee";
 import AboutIntro from "../components/AboutIntro";

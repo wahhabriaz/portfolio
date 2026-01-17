@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import FooterRobot from "./3d-Component/FooterRobot";
+
 
 type LinkItem = { label: string; href: string };
 
