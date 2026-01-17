@@ -175,7 +175,7 @@ export default function Footer() {
 
         {/* big name text */}
         <div className="mt-6 flex items-end justify-center">
-          <h2 className="select-none text-[15vw] font-semibold leading-none tracking-tight text-white">
+          <h2 className="select-none text-[11vw] font-semibold leading-none tracking-tight text-white font-unbounded">
             AB. WAHAAB
           </h2>
         </div>
