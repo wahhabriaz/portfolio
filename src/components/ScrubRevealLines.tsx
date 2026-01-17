@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
-
 type ScrubRevealLinesProps = {
   lines: string[];
   className?: string;
@@ -25,18 +24,21 @@ export default function ScrubRevealLines({
 }: ScrubRevealLinesProps) {
   const ref = useRef<HTMLDivElement | null>(null);
 
+  // Ensure correct offset format
+  const startOffset = `start ${startAt}` as "start" | `${number}%`;
+  const endOffset = `start ${endAt}` as "start" | `${number}%`;
+
   // ✅ scroll progress for this element only
-  // "start 40%" -> element's top hits 40% viewport = progress 0
-  // "start 10%" -> element's top hits 10% viewport = progress 1
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: [`start ${startAt}`, `start ${endAt}`],
+    offset: [startOffset, endOffset], // Use the newly typed offset here
   });
+  
   const smoothProgress = useSpring(scrollYProgress, {
-  stiffness: 120,
-  damping: 30,
-  mass: 0.2,
-});
+    stiffness: 120,
+    damping: 30,
+    mass: 0.2,
+  });
 
   return (
     <div ref={ref} className={className}>
@@ -78,16 +80,9 @@ function ScrubLine({
   const y = useTransform(progress, [start, end], [40, 0]);
   const opacity = useTransform(progress, [start, end], [0, 1]);
 
-  // ✅ Mask reveal (so it feels like a clip)
-  // const clipPath = useTransform(
-  //   progress,
-  //   [start, end],
-  //   ["inset(100% 0% 0% 0%)", "inset(0% 0% 0% 0%)"]
-  // );
-
   return (
     <div className="overflow-hidden">
-      <motion.div style={{ y, opacity}}>
+      <motion.div style={{ y, opacity }}>
         {children}
       </motion.div>
     </div>
