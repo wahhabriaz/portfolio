@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
+
 import TopCurve from "./TopCurve";
-import gsap from "gsap";
+
 import StretchyButton from "./StretchyMagneticButton";
 import ScrubRevealLines from "./ScrubRevealLines";
 

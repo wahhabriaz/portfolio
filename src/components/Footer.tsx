@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 
 type LinkItem = { label: string; href: string };
@@ -50,76 +50,7 @@ function Pill({ children }: { children: React.ReactNode }) {
   );
 }
 
-/**
- * Robot face follows mouse by rotating slightly + parallax translate.
- * Works with a PNG/WebP robot image. Swap in 3D later.
- */
-function RobotFollow({ src }: { src: string }) {
-  const ref = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const onMove = (e: MouseEvent) => {
-      const rect = el.getBoundingClientRect();
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-
-      const dx = (e.clientX - cx) / rect.width;  // -0.5 to 0.5ish
-      const dy = (e.clientY - cy) / rect.height;
-
-      // clamp
-      const clamp = (v: number, min: number, max: number) =>
-        Math.max(min, Math.min(max, v));
-
-      const rx = clamp(dy * -18, -12, 12);
-      const ry = clamp(dx * 22, -14, 14);
-
-      const tx = clamp(dx * 18, -10, 10);
-      const ty = clamp(dy * 14, -10, 10);
-
-      el.style.transform = `
-        translate3d(${tx}px, ${ty}px, 0)
-        rotateX(${rx}deg)
-        rotateY(${ry}deg)
-      `;
-    };
-
-    const onLeave = () => {
-      el.style.transform =
-        "translate3d(0,0,0) rotateX(0deg) rotateY(0deg)";
-    };
-
-    window.addEventListener("mousemove", onMove);
-    window.addEventListener("mouseleave", onLeave);
-
-    return () => {
-      window.removeEventListener("mousemove", onMove);
-      window.removeEventListener("mouseleave", onLeave);
-    };
-  }, []);
-
-  return (
-    <div className="relative flex items-center justify-center">
-      {/* perspective wrapper */}
-      <div className="[perspective:900px]">
-        <div
-          ref={ref}
-          className="will-change-transform transition-transform duration-150 ease-out"
-          style={{ transformStyle: "preserve-3d" }}
-        >
-          <img
-            src={src}
-            alt="Robot"
-            className="h-[140px] w-[140px] object-contain sm:h-[170px] sm:w-[170px] md:h-[200px] md:w-[200px]"
-            draggable={false}
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default function Footer() {
   // local time (like screenshot)
