@@ -15,7 +15,7 @@ type NavItem = {
 const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Works", href: "/works" },
+  // { label: "Works", href: "/works" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -147,7 +147,7 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <nav className="hidden items-center gap-8 text-md text-black/70 md:flex">
-            {NAV_ITEMS.slice(0, 3).map((item) => (
+            {NAV_ITEMS.slice(0, 3)    .filter((item) => !(item.label === "Contact")).map((item) => (
               <Link
                 key={item.label}
                 to={item.href}
