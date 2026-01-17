@@ -16,10 +16,9 @@ export default function SmoothScrollProvider({
     // ✅ Create Lenis instance
     const lenis = new Lenis({
       duration: 1.2,
-      smoothWheel: true,
-      smoothTouch: false, // better UX on mobile (keep false)
-      wheelMultiplier: 1,
-      touchMultiplier: 1,
+      smoothWheel: true, // enables smooth scroll for wheel interactions
+      wheelMultiplier: 1, // multiplier for wheel scroll speed
+      touchMultiplier: 1, // multiplier for touch scroll speed
     });
 
     // ✅ Tell ScrollTrigger to update on Lenis scroll
