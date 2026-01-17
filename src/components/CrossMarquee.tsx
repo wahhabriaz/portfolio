@@ -86,7 +86,7 @@ function DiagonalRibbon({
 }: {
   rotate: string;
   top: string;
-  trackRef: React.RefObject<HTMLDivElement | null>;
+  trackRef: React.RefObject<HTMLDivElement>;
   items: string[];
 }) {
   return (
