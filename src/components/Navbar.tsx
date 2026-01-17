@@ -140,7 +140,7 @@ export default function Navbar() {
         <div className="mx-auto flex w-full max-w-8xl items-center justify-between px-4 py-6 sm:px-8">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="text-3xl font-black tracking-tight text-black">
+            <div className="text-3xl font-black text-black font-unbounded">
               AB. WAHAAB
             </div>
           </Link>
