@@ -39,18 +39,26 @@ function FooterColumn({ title, items }: { title: string; items: LinkItem[] }) {
   );
 }
 
-function Pill({ children }: { children: React.ReactNode }) {
+
+type PillProps = {
+  children: React.ReactNode;
+  href: string;           // route / url
+  target?: string;
+  rel?: string;
+};
+
+export function Pill({ children, href, target, rel }: PillProps) {
   return (
     <a
-      href="#"
+      href={href}
+      target={target}
+      rel={rel}
       className="rounded-full border border-white/30 px-5 py-2 text-sm text-white/80 backdrop-blur transition-colors hover:text-white"
     >
       {children}
     </a>
   );
 }
-
-
 
 export default function Footer() {
   // local time (like screenshot)
@@ -91,8 +99,8 @@ export default function Footer() {
 
           {/* right pills */}
           <div className="flex flex-wrap items-center justify-start gap-4 lg:justify-end">
-            <Pill>+923124593613</Pill>
-            <Pill>wahhabriaz95@gmail.com</Pill>
+            <Pill href="tel:+923124593613">+923124593613</Pill>
+            <Pill href="mailto:wahhabriaz95@gmail.com">wahhabriaz95@gmail.com</Pill>
           </div>
         </div>
 
