@@ -26,57 +26,151 @@ export default function ServicesSection() {
         description:
           "Building scalable and high-performance web applications using Next.js, React, Node.js, and TypeScript, with robust backend architectures, secure RESTful APIs, and clean code practices.",
         icon: (
-          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" className="ml-2 mt-2 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
-            <path d="M12 18L22 12L32 18L42 12V38L32 44L22 38L12 44V18Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M22 12V38M32 18V44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            className="ml-2 mt-2 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16"
+          >
+            <path
+              d="M12 18L22 12L32 18L42 12V38L32 44L22 38L12 44V18Z"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M22 12V38M32 18V44"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         ),
       },
       {
         id: "02",
         number: "02",
-        title: "UI/UX Design &\nFrontend",
+        title: "eCommerce &\nFrontend",
         description:
-          "Designing modern, responsive interfaces with Figma, Tailwind CSS, and Framer Motion. Creating intuitive experiences with clean design systems and pixel-perfect implementations.",
+          "Building high-converting Shopify and WordPress stores with optimized UX, custom themes, responsive layouts, and smooth customer journeys focused on sales and retention.",
         icon: (
-          <svg width="50" height="50" viewBox="0 0 64 64" fill="none" className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
-            <rect x="10" y="10" width="44" height="44" rx="6" stroke="currentColor" strokeWidth="2.5" />
-            <path d="M10 22H54M22 10V54" stroke="currentColor" strokeWidth="2.5" />
-            <circle cx="38" cy="38" r="6" stroke="currentColor" strokeWidth="2.5" />
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 64 64"
+            fill="none"
+            className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14"
+          >
+            <rect
+              x="10"
+              y="10"
+              width="44"
+              height="44"
+              rx="6"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
+            <path
+              d="M10 22H54M22 10V54"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
+            <circle
+              cx="38"
+              cy="38"
+              r="6"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
           </svg>
         ),
       },
       {
         id: "03",
         number: "03",
-        title: "SaaS Platform\nDevelopment",
+        title: "Custom Web\nSolutions",
         description:
-          "Developing end-to-end SaaS solutions with subscription systems, Stripe billing, and multi-tenant management. Ensuring scalability and secure user management.",
+          "Creating tailored web solutions including dashboards, admin panels, integrations, and business tools that scale with real-world usage and evolving requirements.",
         icon: (
-          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" className="mt-2 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
-            <path d="M32 10L46 18V38L32 46L18 38V18L32 10Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M32 10V46M18 18L46 38M46 18L18 38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            className="mt-2 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16"
+          >
+            <path
+              d="M32 10L46 18V38L32 46L18 38V18L32 10Z"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M32 10V46M18 18L46 38M46 18L18 38"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         ),
       },
       {
         id: "04",
         number: "04",
-        title: "API & System\nArchitecture",
+        title: "Backend &\nArchitecture",
         description:
-          "Designing maintainable APIs with PostgreSQL, Prisma, and MongoDB. Focusing on performance optimization, security best practices, and reliable data flow.",
+          "Designing reliable backend systems using Node.js, REST APIs, databases, and third-party integrations (payments, CRMs, analytics) with a focus on security and efficiency.",
         icon: (
-          <svg width="60" height="60" viewBox="0 0 64 64" fill="none" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
-            <circle cx="18" cy="18" r="6" stroke="currentColor" strokeWidth="2.5" />
-            <circle cx="46" cy="18" r="6" stroke="currentColor" strokeWidth="2.5" />
-            <circle cx="18" cy="46" r="6" stroke="currentColor" strokeWidth="2.5" />
-            <circle cx="46" cy="46" r="6" stroke="currentColor" strokeWidth="2.5" />
-            <path d="M24 18H40M24 46H40M18 24V40M46 24V40" stroke="currentColor" strokeWidth="2.5" />
+          <svg
+            width="60"
+            height="60"
+            viewBox="0 0 64 64"
+            fill="none"
+            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16"
+          >
+            <circle
+              cx="18"
+              cy="18"
+              r="6"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
+            <circle
+              cx="46"
+              cy="18"
+              r="6"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
+            <circle
+              cx="18"
+              cy="46"
+              r="6"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
+            <circle
+              cx="46"
+              cy="46"
+              r="6"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
+            <path
+              d="M24 18H40M24 46H40M18 24V40M46 24V40"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            />
           </svg>
         ),
       },
     ],
-    []
+    [],
   );
 
   useEffect(() => {
@@ -124,13 +218,16 @@ export default function ServicesSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#e8e8e7] relative overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="w-full bg-[#e8e8e7] relative overflow-hidden"
+    >
       <div className="mx-auto w-full max-w-[1400px] px-4 lg:px-24 py-20 sm:py-32 lg:py-40 relative z-[50]">
         {/* Heading */}
         <div className="flex flex-col items-start max-w-3xl">
           <h2 className="text-[#1c1c1c] text-3xl lg:text-4xl font-medium mb-8 sm:mb-12 leading-[1.1] lg:px-4 px-1">
-            Transforming ideas into exceptional digital experiences through
-            expertise and innovation
+            Transforming ideas into powerful digital products through practical
+            engineering and proven workflows.
           </h2>
         </div>
 
@@ -159,7 +256,6 @@ export default function ServicesSection() {
 function ServiceCard({
   service,
   isLast,
-  
 }: {
   service: Service;
   isLast: boolean;
@@ -168,17 +264,17 @@ function ServiceCard({
   return (
     <div className="group relative">
       <div
-         className={[
-    "relative text-[#1c1c1c]",
-    "w-full sm:w-[350px] md:w-[450px] lg:w-[480px]",
-    "h-auto sm:h-[350px] md:h-[450px] lg:h-[480px]",
-    "border border-gray-400",
-    // ✅ Only remove right border on desktop if NOT last
-    !isLast ? "lg:border-r-0" : "lg:border-r",
-    "p-6 sm:p-8 md:p-10",
-    "transition-all duration-500 cursor-pointer overflow-hidden",
-    "mb-4 lg:mb-0",
-  ].join(" ")}
+        className={[
+          "relative text-[#1c1c1c]",
+          "w-full sm:w-[350px] md:w-[450px] lg:w-[480px]",
+          "h-auto sm:h-[350px] md:h-[450px] lg:h-[480px]",
+          "border border-gray-400",
+          // ✅ Only remove right border on desktop if NOT last
+          !isLast ? "lg:border-r-0" : "lg:border-r",
+          "p-6 sm:p-8 md:p-10",
+          "transition-all duration-500 cursor-pointer overflow-hidden",
+          "mb-4 lg:mb-0",
+        ].join(" ")}
       >
         <div className="relative flex flex-col justify-between z-10 h-full">
           {/* top */}
